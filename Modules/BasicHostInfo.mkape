@@ -1,0 +1,12 @@
+Description: 'Basic Host Info'
+Category: HostInfo
+Author: kmdivi
+Version: 1.0
+Id: 6971460c-692f-4348-8205-7b70bcd163e0
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: RECmd\RECmd.exe
+        CommandLine: -d %sourceDirectory% --bn BatchExamples\BasicHostInfo.reb --nl false --csv %destinationDirectory%
+        ExportFormat: csv
